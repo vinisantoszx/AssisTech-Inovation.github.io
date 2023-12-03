@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    cursor: default;
+}
+
+/* Estilização MENU - Início */
+header {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3em;
+    z-index: 2;
+    background-color: black;
+}
+
+body {background: black;}
+
+nav {
+    background-color: black;
+    z-index: 3;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    margin-top: 10px;
+    align-items: flex-end;
+}
+nav ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav > ul > a {text-decoration: none; color: white; width: max-content;}
+
+#logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+    font-size: 25px;
+    margin-left: 5em;
+}
+
+#galeria, #sobrenos, #servicos {
+    margin-left: 8em;
+}
+
+#home, #galeria, #sobrenos, #servicos {
+    font-weight: semi-bold;
+    margin-top: 10px;
+    opacity: 0.7;
+    transition: 300ms;
+}
+
+#home:hover, #galeria:hover, #sobrenos:hover, #servicos:hover{
+    font-size: 18px;
+    transition: 300ms;
+    text-shadow: 0px 0px 20px white;
+}
+
+#icon-menu {
+    z-index: 5;
+    font-size: 25px;
+    visibility: hidden;
+}
+
+.menu-hamburguer {
+    margin-top: calc(15em + 50px);
+    width: 10em;
+    height: 15em;
+    left: 0;
+    background-color: rgb(26, 26, 26);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    visibility: hidden; 
+}
+.menu-hamburguer a {
+    font-family: arial;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-hamburguer ul {
+    text-align: left;
+    list-style: none;
+
+}
+.menu-hamburguer li {
+    margin-bottom: 1em;
+}
+
+/*  Responsividade do menu */
+@media screen and (max-width: 768px) {
+    #galeria, #sobrenos, #servicos, #home {opacity: 0;}
+
+    #logo {
+        padding-right: 6em;
+    }
+
+    main {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Estilização MENU - Fim */
+
+img {
+    position: absolute;
+    width: 100%;
+}
+
+.content-left {
+    color: white;
+    margin-top: 10rem;
+    margin-left: 4rem;
+    position: absolute;
+}
+.titulo {
+    color: white;
+    font-family: arial;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+main p {
+    color: white;
+    display: inline;
+    font-family: arial;
+    font-size: 18px;
+    opacity: 0.6;
+    font-weight:100;
+    word-spacing: 2px;
+}
+.saibaMais {
+    width: 15em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: rgb(255,255,255);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 47%, rgba(0,218,214,1) 53%);
+    background-size: 1800px;
+    background-position-x: -250px;
+    transition: 350ms ease-out;
+    border: none;
+    margin-top: 80px;
+
+    color: black;
+    font-size: 16px;
+    font-family: arial;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.saibaMais:hover {
+    background-position-x: 250px;
+    transition: 300ms ease-in;
+    color: white;
+}

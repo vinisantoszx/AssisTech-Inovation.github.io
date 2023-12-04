@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: 0;
     cursor: default;
-    
 }
-
+a{
+    text-decoration: none;
+}
 /* Estilização MENU - Início */
 header {
     position: absolute;
@@ -79,10 +80,9 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
     justify-content: center;
     align-items: center;
     display: flex;
-
-    visibility: hidden; 
+    
+    visibility: hidden;
 }
-
 .menu-hamburguer a {
     font-family: arial;
     font-size: 18px;
@@ -106,7 +106,7 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
     #logo {
         padding-right: 6em;
     }
-    
+
     body {
         background-image: url(../IMG/teste5.jpg);
         background-size: cover;
@@ -122,24 +122,9 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
         justify-content: center;
         align-items: center;
         display: flex;
-    
+        
         visibility: hidden;
     }
-    
-    .menu-hamburguer:hover {
-        margin-top: calc(15em + 50px);
-        width: 10em;
-        height: 15em;
-        left: 0;
-        background-color: rgb(26, 26, 26);
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        
-        visibility: visible;
-    }
-
     .menu-hamburguer a {
         font-family: arial;
         font-size: 18px;
@@ -152,7 +137,6 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
         list-style: none;
     
     }
-
     .menu-hamburguer li {
         margin-bottom: 1em;
     }
@@ -162,97 +146,14 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
         align-items: center;
     }
 
-    div.master_box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20vh;
-        gap: 1.5rem;
-    }
-    
-}
-
-@media screen and (max-width: 768px) and (min-width: 430px){
-    #galeria, #sobrenos, #servicos, #home {opacity: 0;}
-
-    #logo {
-        padding-right: 6em;
-    }
-    
-    body {
-        background-image: url(../IMG/teste5.jpg);
-        background-size: cover;
-    }
-
-    .menu-hamburguer {
-        margin-top: calc(15em + 50px);
-        width: 10em;
-        height: 15em;
-        left: 0;
-        background-color: rgb(26, 26, 26);
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    
-        visibility: hidden;
-    }
-    
-    .menu-hamburguer:hover {
-        margin-top: calc(15em + 50px);
-        width: 10em;
-        height: 15em;
-        left: 0;
-        background-color: rgb(26, 26, 26);
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        
-        visibility: visible;
-    }
-
-    .menu-hamburguer a {
-        font-family: arial;
-        font-size: 18px;
-        text-decoration: none;
-        color: white;
-    }
-    
-    .menu-hamburguer ul {
-        text-align: left;
-        list-style: none;
-    
-    }
-
-    .menu-hamburguer li {
-        margin-bottom: 1em;
-    }
-
-    main {
-        justify-content: center;
-        align-items: center;
-    }
-
-    div.master_box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20vh;
-        gap: 1.5rem;
-        padding: 5rem;
-    }
-    
 }
 
 /* Estilização MENU - Fim */
 
-/* img {
+img {
     position: absolute;
     width: 100%;
-} */
+}
 
 .content-left {
     color: white;
@@ -260,61 +161,18 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
     margin-left: 4rem;
     position: absolute;
 }
-
 .titulo {
     color: white;
     font-family: arial;
     font-size: 40px;
     margin-bottom: 20px;
 }
-
 main p {
     color: white;
     display: inline;
     font-family: arial;
     font-size: 18px;
-    opacity: 0.6;
+    opacity: 1.0;
     font-weight:100;
     word-spacing: 2px;
 }
-.master_box{
-    display: flex;
-    justify-content: center;
-    margin-top: 12vh;
-}
-.master_box > .box_services{
-    width: 90%;
-    height: 40vh;
-    margin: 0px 35px;
-    color: #f5ffff;
-    font-size: 20px;
-    background-color: #010001;
-    opacity: 50%;
-    border: #ffffff 2px groove;
-    border-radius: 3vh;
-    transition: 300ms;
-}
-
-.img_serv{
-    display: flex;
-    justify-content: center;
-    margin-top: 4vh;
-}
-
-.master_box > .box_services:hover{
-    width: 92%;
-    height: 42vh;
-    margin: 0px 35px;
-    background-color: #010001;
-    border: #ffffff 2px groove;
-    opacity: 100%;
-    display: inline-block;
-    transition: 300ms;
-}
-
-div.master_box > div.box_services > p.par_serv{
-    transition: 300ms;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
-}
-

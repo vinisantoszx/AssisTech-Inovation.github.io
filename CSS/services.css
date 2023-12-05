@@ -69,7 +69,18 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
     visibility: hidden;
 }
 
-.menu-hamburguer {
+.mobile-menu div{
+    width: 35px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 8px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+/* .menu-hamburguer {
     margin-top: calc(15em + 50px);
     width: 10em;
     height: 15em;
@@ -97,7 +108,7 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
 }
 .menu-hamburguer li {
     margin-bottom: 1em;
-}
+} */
 
 /*  Responsividade do menu */
 @media screen and (max-width: 768px) {
@@ -110,51 +121,32 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
     body {
         background-image: url(../IMG/teste5.jpg);
         background-size: cover;
+        overflow-x: hidden;
     }
 
-    .menu-hamburguer {
-        margin-top: calc(15em + 50px);
-        width: 10em;
-        height: 15em;
-        left: 0;
-        background-color: rgb(26, 26, 26);
+    .nav-list{
         position: absolute;
-        justify-content: center;
+        top: -8vh;
+        right: 0vw;
+        width: 50vw;
+        height: 92vh;
+        flex-direction: column;
         align-items: center;
-        display: flex;
-    
-        visibility: hidden;
-    }
-    
-    .menu-hamburguer:hover {
-        margin-top: calc(15em + 50px);
-        width: 10em;
-        height: 15em;
-        left: 0;
-        background-color: rgb(26, 26, 26);
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        
-        visibility: visible;
+        transform: translateX(100%);
     }
 
-    .menu-hamburguer a {
-        font-family: arial;
-        font-size: 18px;
-        text-decoration: none;
-        color: white;
-    }
-    
-    .menu-hamburguer ul {
-        text-align: left;
-        list-style: none;
-    
+    .nav-list.active{
+        transform: translateX(0);
     }
 
-    .menu-hamburguer li {
-        margin-bottom: 1em;
+    .nav-list li{
+        margin-left: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+        position: relative;
+        right: 40vw;
     }
 
     main {
@@ -167,93 +159,40 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 20vh;
+        margin-top: 5vh;
         gap: 1.5rem;
     }
     
 }
 
-@media screen and (max-width: 768px) and (min-width: 430px){
-    #galeria, #sobrenos, #servicos, #home {opacity: 0;}
-
-    #logo {
-        padding-right: 6em;
-    }
-    
-    body {
-        background-image: url(../IMG/teste5.jpg);
-        background-size: cover;
-    }
-
-    .menu-hamburguer {
-        margin-top: calc(15em + 50px);
-        width: 10em;
-        height: 15em;
-        left: 0;
-        background-color: rgb(26, 26, 26);
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    
-        visibility: hidden;
-    }
-    
-    .menu-hamburguer:hover {
-        margin-top: calc(15em + 50px);
-        width: 10em;
-        height: 15em;
-        left: 0;
-        background-color: rgb(26, 26, 26);
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        
-        visibility: visible;
-    }
-
-    .menu-hamburguer a {
-        font-family: arial;
-        font-size: 18px;
-        text-decoration: none;
-        color: white;
-    }
-    
-    .menu-hamburguer ul {
-        text-align: left;
-        list-style: none;
-    
-    }
-
-    .menu-hamburguer li {
-        margin-bottom: 1em;
-    }
-
-    main {
-        justify-content: center;
-        align-items: center;
-    }
-
+@media screen and (max-width: 1024px) and (min-width: 770px){
     div.master_box{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         margin-top: 20vh;
-        gap: 1.5rem;
-        padding: 5rem;
+    }
+
+    .master_box > .box_services{
+        width: 90%;
+        height: 40vh;
+        padding: rem;
+        color: #f5ffff;
+        font-size: 20px;
+        background-color: #010001;
+        opacity: 50%;
+        border: #ffffff 2px groove;
+        border-radius: 3vh;
+        transition: 300ms;
     }
     
 }
 
 /* Estilização MENU - Fim */
-
-/* img {
-    position: absolute;
-    width: 100%;
-} */
-
+.pages{
+    visibility: hidden;
+}
 .content-left {
     color: white;
     margin-top: 10rem;
@@ -285,7 +224,7 @@ main p {
 .master_box > .box_services{
     width: 90%;
     height: 40vh;
-    margin: 0px 35px;
+    margin: 0px 10px;
     color: #f5ffff;
     font-size: 20px;
     background-color: #010001;

@@ -41,7 +41,7 @@ nav ul {
 
 nav > ul > a {text-decoration: none; color: white; width: max-content;}
 
-#logo {
+#logof {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
     font-size: 25px;
     margin-left: 5em;
@@ -69,84 +69,7 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
     font-size: 25px;
     visibility: hidden;
 }
-
-.menu-hamburguer {
-    margin-top: calc(15em + 50px);
-    width: 10em;
-    height: 15em;
-    left: 0;
-    background-color: rgb(26, 26, 26);
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    
-    visibility: hidden;
-}
-.menu-hamburguer a {
-    font-family: arial;
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-}
-
-.menu-hamburguer ul {
-    text-align: left;
-    list-style: none;
-
-}
-.menu-hamburguer li {
-    margin-bottom: 1em;
-}
-
 /*  Responsividade do menu */
-@media screen and (max-width: 768px) {
-    #galeria, #sobrenos, #servicos, #home {opacity: 0;}
-
-    #logo {
-        padding-right: 6em;
-    }
-
-    body {
-        background-image: url(../IMG/teste5.jpg);
-        background-size: cover;
-    }
-
-    .menu-hamburguer {
-        margin-top: calc(15em + 50px);
-        width: 10em;
-        height: 15em;
-        left: 0;
-        background-color: rgb(26, 26, 26);
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        
-        visibility: hidden;
-    }
-    .menu-hamburguer a {
-        font-family: arial;
-        font-size: 18px;
-        text-decoration: none;
-        color: white;
-    }
-    
-    .menu-hamburguer ul {
-        text-align: left;
-        list-style: none;
-    
-    }
-    .menu-hamburguer li {
-        margin-bottom: 1em;
-    }
-
-    main {
-        justify-content: center;
-        align-items: center;
-    }
-
-}
 
 /* Estilização MENU - Fim */
 
@@ -158,8 +81,10 @@ img {
 .content-left {
     color: white;
     margin-top: 10rem;
-    margin-left: 4rem;
+    margin-left: 2.5%;
     position: absolute;
+    display: flex;
+    flex-direction: column;
 }
 .titulo {
     color: white;

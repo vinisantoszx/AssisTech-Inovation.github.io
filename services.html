@@ -11,6 +11,7 @@
 
     <!-- Folha de estilização  CSS-->
     <link rel="stylesheet" href="CSS\services.css">
+    <link rel="stylesheet" href="CSS\menu.css">
 
     <!-- Título principal -->
     <title>AssisTech - Serviços</title>
@@ -18,30 +19,31 @@
 <body>
     <header>
         <nav>
-            <ul class="nav-list">
+            <ul>
                 <a href="index.html"><li class="item-menu" id="home">Home</li></a>
-                <a href="#"><li class="item-menu" id="galeria">Galeria</li></a>
-                <a href="#"><li class="item-menu" id="logo">ASSISTECH</li></a>
+                <a href="galeria.html"><li class="item-menu" id="galeria">Galeria</li></a>
+                <a href="#"><li class="item-menu" id="logof">ASSISTECH</li></a>
                 <a id="icon-menu" href="#"><i class='fas fa-align-justify'></i></a>
                 <a href="sobrenos.html"><li class="item-menu" id="sobrenos">Sobre nós</li></a>
                 <a href="services.html"><li class="item-menu" id="servicos">Serviços</li></a>
             </ul>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </nav>
-        <!-- <menu class="menu-hamburguer">
-            <div class="contents">
-                <ul>
-                    </i><a href="#"><li class="item-menu"><i class='fas fa-house'></i> | Home</li></a>
-                    <a href="#"><li class="item-menu"><i id="icon-galery" class='fas fa-images'></i> | Galeria</li></a>
-                    <a href="#"><li class="item-menu"><i class='fas fa-people-group'></i> | Sobre nós</li></a>
-                    <a href="#"><li class="item-menu"><i class='fas fa-shop'></i> | Serviços</li></a>
-                </ul>
-            </div>
-        </menu> -->
+    </header>
+    
+    <header id="header">
+        <a id="logo" href="">ASSISTECH</a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                <li><a href="services.html">SERVIÇOS</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
     </header>
 
     <h1 id="page_services" class="pages">Serviços</h1>

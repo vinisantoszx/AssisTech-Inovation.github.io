@@ -69,34 +69,6 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
     font-size: 25px;
     visibility: hidden;
 }
-
 /*  Responsividade do menu */
 
 /* Estilização MENU - Fim */
-
-img {
-    position: absolute;
-    width: 100%;
-}
-
-.content-left {
-    color: white;
-    margin-top: 10rem;
-    margin-left: 4rem;
-    position: absolute;
-}
-.titulo {
-    color: white;
-    font-family: arial;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-main p {
-    color: white;
-    display: inline;
-    font-family: arial;
-    font-size: 18px;
-    opacity: 1.0;
-    font-weight:100;
-    word-spacing: 2px;
-}

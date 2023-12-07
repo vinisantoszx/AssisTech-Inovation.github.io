@@ -8,7 +8,10 @@
 
     <!-- Fonts e Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link> <!-- Icons -->
+    
+    <!-- Folha de estilização  CSS-->
     <link rel="stylesheet" href="CSS\home.css">
+    <link rel="stylesheet" href="CSS\menu.css">
 
 </head>
 <body>
@@ -16,24 +19,29 @@
         <nav>
             <ul>
                 <a href="index.html"><li class="item-menu" id="home">Home</li></a>
-                <a href="#"><li class="item-menu" id="galeria">Galeria</li></a>
-                <a href="#"><li class="item-menu" id="logo">ASSISTECH</li></a>
+                <a href="galeria.html"><li class="item-menu" id="galeria">Galeria</li></a>
+                <a href="#"><li class="item-menu" id="logof">ASSISTECH</li></a>
                 <a id="icon-menu" href="#"><i class='fas fa-align-justify'></i></a>
                 <a href="sobrenos.html"><li class="item-menu" id="sobrenos">Sobre nós</li></a>
                 <a href="services.html"><li class="item-menu" id="servicos">Serviços</li></a>
             </ul>
         </nav>
-        <menu class="menu-hamburguer">
-            <div class="contents">
-                <ul>
-                    </i><a href="#"><li class="item-menu"><i class='fas fa-house'></i> | Home</li></a>
-                    <a href="#"><li class="item-menu"><i id="icon-galery" class='fas fa-images'></i> | Galeria</li></a>
-                    <a href="#"><li class="item-menu"><i class='fas fa-people-group'></i> | Sobre nós</li></a>
-                    <a href="#"><li class="item-menu"><i class='fas fa-shop'></i> | Serviços</li></a>
-                    <a href="login.html"><li class="item-menu"><i class='fas fa-shop'></i> | Login</li></a>
-                </ul>
-            </div>
-        </menu>
+    </header>
+
+    <header id="header">
+        <a id="logo" href="">ASSISTECH</a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                <li><a href="services.html">SERVIÇOS</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="content-left">
@@ -45,5 +53,6 @@
         </div>
     </main>
     <script src="JS\home.js"></script>
+    <script src="JS/mobile-navbar.js"></script>
 </body>
 </html>

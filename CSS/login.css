@@ -1,8 +1,6 @@
 /*INÍCIO DA ESTILIZAÇÃO DO MENU LOGIN*/
 
 body{
-    background-image: url(../IMG/BG.jpg);
-    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
@@ -84,7 +82,7 @@ a{
 /*INÍCIO DA ESTILIZAÇÃO DO MENU LOGIN*/
 
 body{
-    background-image: url(../IMG/galeria_bg.jpg);
+    background-image: url(../IMG/teste3.jpg);
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;

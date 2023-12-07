@@ -40,7 +40,7 @@ nav ul {
 
 nav > ul > a {text-decoration: none; color: white; width: max-content;}
 
-#logo {
+#logof {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
     font-size: 25px;
     margin-left: 5em;
@@ -54,13 +54,13 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
     font-weight: semi-bold;
     margin-top: 10px;
     opacity: 0.7;
-    transition: 300ms;
+    transition: 0.3s;
 }
 
 #home:hover, #galeria:hover, #sobrenos:hover, #servicos:hover{
     opacity: 1.0;
     text-shadow: 0px 0px 20px white;
-    transition: 300ms;
+    transition: 0.3s;
 }
 
 #icon-menu {
@@ -69,101 +69,7 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
     visibility: hidden;
 }
 
-.mobile-menu div{
-    width: 35px;
-    height: 2px;
-    background-color: #ffffff;
-    margin: 8px;
-}
-
-.mobile-menu{
-    display: none;
-    cursor: pointer;
-}
-/* .menu-hamburguer {
-    margin-top: calc(15em + 50px);
-    width: 10em;
-    height: 15em;
-    left: 0;
-    background-color: rgb(26, 26, 26);
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-    visibility: hidden; 
-}
-
-.menu-hamburguer a {
-    font-family: arial;
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-}
-
-.menu-hamburguer ul {
-    text-align: left;
-    list-style: none;
-
-}
-.menu-hamburguer li {
-    margin-bottom: 1em;
-} */
-
 /*  Responsividade do menu */
-@media screen and (max-width: 768px) {
-    #galeria, #sobrenos, #servicos, #home {opacity: 0;}
-
-    #logo {
-        padding-right: 6em;
-    }
-    
-    body {
-        background-image: url(../IMG/teste5.jpg);
-        background-size: cover;
-        overflow-x: hidden;
-    }
-
-    .nav-list{
-        position: absolute;
-        top: -6.5vh;
-        right: 0vw;
-        width: 50vw;
-        height: 92vh;
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-    }
-
-    .nav-list.active{
-        transform: translateX(0);
-    }
-
-    .nav-list li{
-        margin-left: 0;
-    }
-
-    .mobile-menu{
-        display: block;
-        position: relative;
-        right: 40vw;
-    }
-
-    main {
-        justify-content: center;
-        align-items: center;
-    }
-
-    div.master_box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5vh;
-        gap: 1.5rem;
-    }
-    
-}
 
 @media screen and (max-width: 1024px) and (min-width: 770px){
     div.master_box{

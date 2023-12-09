@@ -1,5 +1,6 @@
 #logo {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
     font-size: 1.5rem;
     text-decoration: none;
     color: #f5ffff;
@@ -14,6 +15,7 @@
     align-items: center;
     justify-content: space-between;
     display: none;
+    overflow-x: hidden;
 }
   
 #menu {
@@ -31,7 +33,132 @@
     display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 450px) {
+    #galeria, #sobrenos, #servicos, #home {
+        opacity: 0;
+        display: none;
+    }
+
+    #logof{
+        display: none;
+    }
+
+    #logo {
+        padding-right: 6em;
+        margin-left: 65%;
+    }
+
+    #header{
+        display: block;
+        box-sizing: border-box;
+        height: 70px;
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+        width: 400%;
+        top: 145%;
+        left: 0%;
+        background: rgb(17, 17, 17);
+        box-shadow: rgb(2, 23, 83) 0 0 40px;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        font-family: Arial;
+        border-radius: 10px;
+        border: rgb(39, 39, 39) 2px solid;
+    }
+
+    #nav.active #menu {
+        height: 260px;
+        visibility: visible;
+        overflow-y: auto;
+        border-radius: 10px;
+        border: rgb(39, 39, 39) 2px solid;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+        text-decoration: none;
+        color: #ffffff;
+        transition: 0.3s;
+    }
+
+    #menu a:hover{
+        text-shadow: 0px 0px 20px white;
+        transition: 0.3s;
+    }
+    
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        color: #ffffff;
+    }
+    
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+      
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    
+    body {
+        background-image: url(../IMG/teste5.jpg);
+        background-size: cover;
+        overflow-x: hidden;
+    }
+
+    main {
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.master_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        gap: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 650px) and (min-width: 450px){
     #galeria, #sobrenos, #servicos, #home {
         opacity: 0;
         display: none;
@@ -44,6 +171,131 @@
     #logo {
         padding-right: 6em;
         margin-left: 75%;
+    }
+
+    #header{
+        display: block;
+        box-sizing: border-box;
+        height: 70px;
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+        width: 400%;
+        top: 145%;
+        left: 0%;
+        background: rgb(17, 17, 17);
+        box-shadow: rgb(2, 23, 83) 0 0 40px;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        font-family: Arial;
+        border-radius: 10px;
+        border: rgb(39, 39, 39) 2px solid;
+    }
+
+    #nav.active #menu {
+        height: 270px;
+        visibility: visible;
+        overflow-y: auto;
+        border-radius: 10px;
+        border: rgb(39, 39, 39) 2px solid;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+        text-decoration: none;
+        color: #ffffff;
+        transition: 0.3s;
+    }
+
+    #menu a:hover{
+        text-shadow: 0px 0px 20px white;
+        transition: 0.3s;
+    }
+    
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        color: #ffffff;
+    }
+    
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+      
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    
+    body {
+        background-image: url(../IMG/teste5.jpg);
+        background-size: cover;
+        overflow-x: hidden;
+    }
+
+    main {
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.master_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        gap: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) and (min-width: 650px){
+    #galeria, #sobrenos, #servicos, #home {
+        opacity: 0;
+        display: none;
+    }
+
+    #logof{
+        display: none;
+    }
+
+    #logo {
+        padding-right: 6em;
+        margin-left: 83%;
     }
 
     #header{

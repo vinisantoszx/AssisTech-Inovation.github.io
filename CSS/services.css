@@ -35,13 +35,12 @@ nav ul {
     display: flex;
     color: white;
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 nav > ul > a {text-decoration: none; color: white; width: max-content;}
 
 #logof {
-    font-family: 'Oswald', sans-serif;
     font-weight: bold;
     font-size: 25px;
     margin-left: 5em;
@@ -100,6 +99,7 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
 .pages{
     visibility: hidden;
 }
+
 .content-left {
     color: white;
     margin-top: 10rem;
@@ -107,17 +107,10 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
     position: absolute;
 }
 
-.titulo {
-    color: white;
-    font-family: arial;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
 main p {
     color: white;
     display: inline;
-    font-family: arial;
+    font-family: 'Archivo', sans-serif;
     font-size: 18px;
     opacity: 0.6;
     font-weight:100;
@@ -127,6 +120,7 @@ main p {
     display: flex;
     justify-content: center;
     margin-top: 12vh;
+    margin-bottom: 5vh;
 }
 .master_box > .box_services{
     width: 90%;
@@ -155,12 +149,13 @@ main p {
     border: #ffffff 2px groove;
     opacity: 100%;
     display: inline-block;
-    transition: 300ms;
+    transition: 0.3s;
 }
 
 div.master_box > div.box_services > p.par_serv{
-    transition: 300ms;
+    transition: 0.3s;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
 }
 

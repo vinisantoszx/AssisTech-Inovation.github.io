@@ -58,6 +58,7 @@
         align-items: center;
         justify-content: space-between;
     }
+
     #menu {
         display: block;
         position: absolute;
@@ -71,13 +72,14 @@
         height: 0px;
         visibility: hidden;
         overflow-y: hidden;
-        font-family: Arial;
+        font-family: 'Oswald', sans-serif;
         border-radius: 10px;
         border: rgb(39, 39, 39) 2px solid;
     }
 
     #nav.active #menu {
-        height: 260px;
+        font-family: 'Oswald', sans-serif;
+        height: 300px;
         visibility: visible;
         overflow-y: auto;
         border-radius: 10px;
@@ -85,6 +87,7 @@
     }
 
     #menu a {
+        font-family: 'Oswald', sans-serif;
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 2px solid rgba(255, 255, 255, 0.05);
@@ -183,6 +186,7 @@
         align-items: center;
         justify-content: space-between;
     }
+
     #menu {
         display: block;
         position: absolute;
@@ -196,13 +200,14 @@
         height: 0px;
         visibility: hidden;
         overflow-y: hidden;
-        font-family: Arial;
+        font-family: 'Oswald', sans-serif;
         border-radius: 10px;
         border: rgb(39, 39, 39) 2px solid;
     }
 
     #nav.active #menu {
-        height: 270px;
+        font-family: 'Oswald', sans-serif;
+        height: 300px;
         visibility: visible;
         overflow-y: auto;
         border-radius: 10px;
@@ -210,6 +215,7 @@
     }
 
     #menu a {
+        font-family: 'Oswald', sans-serif;
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 2px solid rgba(255, 255, 255, 0.05);
@@ -321,13 +327,14 @@
         height: 0px;
         visibility: hidden;
         overflow-y: hidden;
-        font-family: Arial;
+        font-family: 'Oswald', sans-serif;
         border-radius: 10px;
         border: rgb(39, 39, 39) 2px solid;
     }
 
     #nav.active #menu {
-        height: 260px;
+        font-family: 'Oswald', sans-serif;
+        height: 300px;
         visibility: visible;
         overflow-y: auto;
         border-radius: 10px;
@@ -335,6 +342,7 @@
     }
 
     #menu a {
+        font-family: 'Oswald', sans-serif;
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 2px solid rgba(255, 255, 255, 0.05);

@@ -34,7 +34,7 @@
 }
 
 @media screen and (max-width: 450px) {
-    #galeria, #sobrenos, #servicos, #home {
+    #login, #sobrenos, #servicos, #home {
         opacity: 0;
         display: none;
     }
@@ -79,7 +79,7 @@
 
     #nav.active #menu {
         font-family: 'Oswald', sans-serif;
-        height: 300px;
+        height: 250px;
         visibility: visible;
         overflow-y: auto;
         border-radius: 10px;
@@ -162,7 +162,7 @@
 }
 
 @media screen and (max-width: 650px) and (min-width: 450px){
-    #galeria, #sobrenos, #servicos, #home {
+    #login, #sobrenos, #servicos, #home {
         opacity: 0;
         display: none;
     }
@@ -207,7 +207,7 @@
 
     #nav.active #menu {
         font-family: 'Oswald', sans-serif;
-        height: 300px;
+        height: 250px;
         visibility: visible;
         overflow-y: auto;
         border-radius: 10px;
@@ -290,7 +290,7 @@
 }
 
 @media screen and (max-width: 1000px) and (min-width: 650px){
-    #galeria, #sobrenos, #servicos, #home {
+    #login, #sobrenos, #servicos, #home {
         opacity: 0;
         display: none;
     }
@@ -334,7 +334,7 @@
 
     #nav.active #menu {
         font-family: 'Oswald', sans-serif;
-        height: 300px;
+        height: 250px;
         visibility: visible;
         overflow-y: auto;
         border-radius: 10px;

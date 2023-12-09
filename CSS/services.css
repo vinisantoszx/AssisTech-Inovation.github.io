@@ -46,18 +46,18 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
     margin-left: 5em;
 }
 
-#galeria, #sobrenos, #servicos {
+#login, #sobrenos, #servicos {
     margin-left: 8em;
 }
 
-#home, #galeria, #sobrenos, #servicos {
+#home, #login, #sobrenos, #servicos {
     font-weight: semi-bold;
     margin-top: 10px;
     opacity: 0.7;
     transition: 0.3s;
 }
 
-#home:hover, #galeria:hover, #sobrenos:hover, #servicos:hover{
+#home:hover, #login:hover, #sobrenos:hover, #servicos:hover{
     opacity: 1.0;
     text-shadow: 0px 0px 20px white;
     transition: 0.3s;

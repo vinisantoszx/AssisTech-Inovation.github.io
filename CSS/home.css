@@ -47,6 +47,10 @@ nav > ul > a {text-decoration: none; color: white; width: max-content;}
     margin-left: 5em;
 }
 
+#home{
+    border-bottom: 2px solid white;
+}
+
 #login, #sobrenos, #servicos {
     margin-left: 8em;
 }

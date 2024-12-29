@@ -1,0 +1,89 @@
+/* site desenvolvido por VINICIUS SANTOS */
+/* entre em contato por @vinisantoszx*/
+
+footer {
+    background: linear-gradient(to bottom, #e98b38, #cd7528, #ae590f, #944907);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-column h2 {
+    font-size: 18px;
+    margin-top: 0;
+
+    font-weight: bold;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.footer-column p, .footer-column a {
+    color: #fff;
+
+    font-size: 14px;
+    margin: 5px 0;
+    text-decoration: none;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.footer-column a {
+    color: #fff;
+
+    transition: 0.2s;
+}
+
+.footer-column a:hover {
+    color: #652a06;
+
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones dentro da coluna */
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: #592403;
+
+    font-weight: bolder;
+    text-decoration: none;
+}

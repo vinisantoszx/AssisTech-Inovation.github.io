@@ -1,0 +1,43 @@
+/* site desenvolvido por VINICIUS SANTOS */
+/* entre em contato por @vinisantoszx*/
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+}
+
+.full-box{
+    padding: 10px 100px;
+}
+
+.full-width-card {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: max-height 0.3s ease;
+}
+
+.card-header {
+    background-color: #cb7246;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc; /* Adiciona uma borda fina entre o cabeçalho e o corpo */
+}
+
+.card-body {
+    padding: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.card-body.expanded {
+    max-height: 500px; /* Ajuste conforme o conteúdo */
+}

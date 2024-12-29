@@ -1,60 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AssisTech | Sua assistência tecnológica</title>
+    <title>Boi Catingueiro - Início</title>
 
-    <!-- Fonts e Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link> <!-- Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS E RESET -->
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 
-    <!-- Folha de estilização  CSS-->
-    <link rel="stylesheet" href="CSS\home.css">
-    <link rel="stylesheet" href="CSS\menu.css">
-
+    <!-- FONTES E LINKS EXTERNOS -->
+    <link rel="shortcut icon" href="IMG/main-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <a href="index.html"><li class="item-menu" id="home">Home</li></a>
-                <a href="sobrenos.html"><li class="item-menu" id="sobrenos">Sobre nós</li></a>
-                <a href="#"><li class="item-menu" id="logof">ASSISTECH</li></a>
-                <a id="icon-menu" href="#"><i class='fas fa-align-justify'></i></a>
-                <a href="services.html"><li class="item-menu" id="servicos">Serviços</li></a>
-                <a href="login.html"><li class="item-menu" id="login">Login</li></a>
-            </ul>
-        </nav>
-    </header>
     
-    <header id="header">
-        <a id="logo" href="">ASSISTECH</a>
-        <nav id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-                <span id="hamburger"></span>
-            </button>
-            <ul id="menu" role="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="sobrenos.html">SOBRE NÓS</a></li>
-                <li><a href="services.html">SERVIÇOS</a></li>
-                <li><a href="login.html">LOGIN</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="content-left">
-            <h1 class="titulo">Sua assistência <br>tecnológica</h1>
-            <p>Não encontre clientes para o seu serviço, encontre <br>Serviços para os seus clientes</p>
-            <a href="sobrenos.html"><button class="saibaMais">
-                Conheça nossa empresa
-            </button></a>
+    <!-- MENU DE NAVEGAÇÃO - DESKTOP/MOBILE -->
+    <nav class="main-menu">
+        <a href="index.html"><img src="IMG/main-logo.png" alt="logo-acmjaii" class="image-logo"></a>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
+        <ul class="nav-list">
+            <li><a href="index.html" class="link-nav">Início</a></li>
+            <li><a href="historia.html" class="link-nav">História</a></li>
+            <li><a href="projetos.html" class="link-nav">Projetos</a></li>
+            <!-- <li><a href="conquistas.html" class="link-nav"><p>Conquistas</p></a></li> -->
+        </ul>
+    </nav>
+
+    <!-- PÁGINA - HOME -->
+    <main>
+
+        <!-- CARROSEL DE IMAGENS -->
+        <div class="carossel">
+            <div class="carossel-inner">
+                <img src="IMG/home-1.png" alt="Imagem 1">
+                <img src="IMG/home-2.png" alt="Imagem 2">
+                <img src="IMG/home-3.png" alt="Imagem 3">
+            </div>
+            <button class="carossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carossel-control next" onclick="moveSlide(1)">&#10095;</button>
+            <div class="carossel-indicators"></div> <!-- MARCADORES -->
+        </div>
+
+        <!-- CARDS SERVIÇOS -->
+        <div class="text-services">
+            <h1>Serviços</h1>
+        </div>
+
+        <div class="cards-services">
+            <!-- CARD DE CONTRACHEQUE -->
+            <div class="card">
+                <h3>Nossa história</h3>
+                <p>Acesse o seu contracheque online de forma rápida e segura.</p>
+                <a href="historia.html" class="btn">Conheça nossa origem</a>
+            </div>
+    
+            <!-- CARD DE CONTATO -->
+            <div class="card">
+                <h3>Projetos</h3>
+                <p>Precisa de ajuda? Fale conosco através de nossos canais de atendimento.</p>
+                <a href="projetos.html" class="btn">Saiba Mais</a>
+            </div>
+        </div>
+        
+        <!-- MAIS INFOS -->
+        <div class="text-info">
+            <h1>Mais informações</h1>
+        </div>
+        <div class="container">
+            <div class="card-info">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d944.9107557539801!2d-39.51090563045146!3d-4.701846999704565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be69006a1b800d%3A0xac7190300888400a!2sAssocia%C3%A7%C3%A3o%20Comunit%C3%A1ria%20Menino%20Jesus%20de%20Alegre%20II!5e1!3m2!1spt-BR!2sbr!4v1732637635014!5m2!1spt-BR!2sbr" 
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
+            </div>
+            <div class="content">
+                <h2>DE ALEGRE PARA O MUNDO!</h2>
+                <p>O Ponto de Cultura Boi Catingueiro é uma iniciativa que celebra e preserva as tradições culturais brasileiras, especialmente aquelas ligadas ao folclore e às manifestações artísticas populares. Inspirado no universo do bumba meu boi e das raízes sertanejas, o projeto promove atividades que integram música, dança, teatro e literatura, valorizando a identidade e a memória da cultura local.</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <!-- Coluna de Contato -->
+                <div class="footer-column">
+                    <h2>Contato</h2>
+                    <p>Endereço: Alegre II, S/N, Itatira-CE</p>
+                    <p>Telefone: (88) 3436-</p>
+                    <p>CNPJ: 06.086.082/0001-15</p>
+                    <p>Email: associacaoalegre2@gmail.com</p>
+                </div>
+    
+                <!-- Coluna de Links e Redes Sociais -->
+                <div class="footer-column">
+                    <h2>Links Rápidos</h2>
+                    <p><a href="#blog">Blog</a></p>
+                    <p><a href="#privacidade">Política de Privacidade</a></p>
+    
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><img src="IMG/facebook.png" alt="Facebook"></a>
+                        <a href="https://blogger.com" target="_blank"><img src="IMG/blogger.png" alt="Blogger"></a>
+                        <a href="https://instagram.com" target="_blank"><img src="IMG/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2024 <a href="https://github.com/vinisantoszx">vinisantoszx</a>. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://github.com/vinisantoszx" target="_blank">Vinícius Santos</a></p>
+            </div>
+        </footer>
+
     </main>
-    <script src="JS\home.js"></script>
-    <script src="JS/mobile-navbar.js"></script>
+
 </body>
+
+<!-- SCRIPTS - HOME-->
+<script src="JS/mobile-navbar.js"></script>
+<script src="JS/image-carrosel.js"></script>
+
 </html>
